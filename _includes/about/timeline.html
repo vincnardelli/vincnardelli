@@ -1,0 +1,30 @@
+<div class="col mt-4">
+  <div class="timeline-body">
+    {% for item in site.data.timeline %}
+      <div class="timeline-item">
+        <div class="content">
+          <h6 class="date">{{ item.from }} — {{ item.to }} | {{ item.city }}</h6>
+
+          <h3>{{ item.title }}</h3>
+          <h5>{{ item.place }}</h5>
+
+{% if item.description %}
+          <p>
+            <a class="btn btn-outline-secondary" data-toggle="collapse" href="#detail-{{ item.id }}" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Research description
+            </a>
+         
+          </p>
+          <div class="collapse" id="detail-{{ item.id }}">
+            <div class="card card-body">
+              <p>{{ item.description }}</p>
+            </div>
+          </div>
+
+{% endif %}
+          
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,36 @@
+- title: Research Fellow (Post-doc)
+  place: Catholic University of the Sacred Heart
+  city: Rome (IT)
+  from: 2023
+  to: current
+  id: postdoc
+
+- title: PhD Student
+  place: University of Milano-Bicocca
+  city: Milan (IT)
+  from: 2019
+  to: 2023
+  id: phd
+
+- title: Visiting Scholar
+  place: Centre for Spatial Data Science, University of Chicago
+  city: Chicago (US)
+  from: 2019
+  to: 2019
+  id: chicago
+  description: The Italian real estate market is not only very different from the US but its complexity and opacity result in a lack of com-prehensive public data on home values. This personal project, developed during my visting at CSDS, seeks to close this gapby introducing home value estimates from web-scraped and crowdsourced open data. It seeks to improve the accuracy ofpredicting home prices using a spatial hedonic model with such data. A new statistical, economic and IT approach to spatialhedonic price modelling is introduced to assess the quality of crowdsourced data from the internet. The project tests thefeasibility of an infrastructure capable of scraping the data and analyzing it in real time.
+
+
+- title: Data scientist
+  place: Joint Research Center (JRC) European Commission
+  city: Seville (SP)
+  from: 2017
+  to: 2019
+  id: jrc
+  description: FPCA project has been implementing a crowdsourcing approach where, since 2018, after an advertising campaign, anony-mous volunteers spontaneously submit data at any day/time on prices of select food commodities (local and imported rice,maize, beans and soybeans), from different markets along the food chain (i.e. farm gate, wholesale and retail markets). Theproject focuses on the Kano and Katsina States in the Northern region of Nigeria and is a collaboration with the EuropeanCommission’s Joint Research Centre.
+
+- title: Master in Data analytics for business and economics
+  place: Catholic University of the Sacred Heart
+  city: Milan (IT)
+  from: 2017
+  to: 2019
