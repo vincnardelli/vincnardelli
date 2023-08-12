@@ -1,0 +1,42 @@
+<!-- Remote Projects JS -->
+<script src="{{ '/assets/js/remote-projects.js' | relative_url }}"></script>
+
+<div class="m-3 mt-5">
+  <!-- Local Projects -->
+  {% assign sorted_papers = site.papers | sort: "path" | reverse %}
+  {% for project in sorted_papers %}
+    {%- assign project_type  = "local" -%}
+    {%- assign project_id    = project.name | slugify -%}
+    {%- assign project_img   = project.image -%}
+    {%- assign project_name  = project.name -%}
+    {%- assign project_desc  = project.description -%}
+    {%- assign project_tools = project.tools -%}
+    {%- assign project_authors = project.authors -%}
+    {%- assign category = project.category -%}
+    {%- assign journal = project.journal -%}
+    {%- assign year = project.year -%}
+    {%- assign github = project.github -%}
+    {%- assign image = project.image -%}
+
+    {%- if project.external_url -%}
+      {%- assign project_url = project.external_url -%}
+    {%- else -%}
+      {%- assign project_url = project.url | relative_url -%}
+    {%- endif -%}
+
+    <!-- Start of row for every three items -->
+    {% cycle '<div class="row">', '', '' %}
+
+      <div class="col-md-4 wow animated fadeIn" data-wow-delay=".15s">
+        {% include papers/project-card.html %}
+      </div>
+
+    <!-- Close the row after every three items -->
+    {% cycle '', '', '</div>' %}
+
+  {% endfor %}
+
+  <!-- Close the row if there's a remainder after dividing by three -->
+  {% cycle '', '', '</div>' %}
+</div>
+

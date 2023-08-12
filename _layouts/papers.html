@@ -1,0 +1,40 @@
+---
+layout: page
+---
+<h5>{{page.category}} | {{page.journal}} ({{page.year}})</h5>
+<h1><b>{{ page.name }}</b></h1>
+
+<h4>{{page.authors}}</h4>
+
+{%- if page.image -%}
+<img id="{{ project_id }}-img" class="card-img-top" src="{{ site.url }}/{{page.image}}" alt="{{ project_name }}" />
+{%- endif -%}
+
+<p class="post-metadata text-muted">
+  {{ page.date | date_to_long_string }} 
+
+  <br>
+
+
+  {% if page.link %}
+  <a class="btn btn-outline-primary mr-2" href="{{page.link}}" role="button", target="_blank"><i class="fas fa-file-download"></i> Link to {{page.category}}</a>
+  {% endif %}
+
+  {% if page.code %}
+  <a class="btn btn-outline-primary" href="{{page.code}}" role="button" target="_blank"><i class="fab fa-github"></i> Link to code</a>
+  {% endif %}
+
+</p>
+
+
+
+
+{{ content }}
+
+
+  {%- if page.tools != empty -%}
+    {% for tag in page.tools %}
+
+      <span class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
+    {% endfor %}
+  {%- endif -%}

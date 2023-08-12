@@ -1,0 +1,91 @@
+html{
+  padding-left: calc(100vw - 100%);
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+
+.badge {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.navbar-brand{
+  font-weight: 800!important;
+  font-size: 30px;
+}
+
+.nav-item{
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+h1{
+  padding-bottom: 20px;
+}
+
+.intro{
+  font-size: 30px;
+  font-weight: 100!important;
+  line-height: 1.5;
+  margin-bottom: 100px;
+  margin-top: 150px;
+}
+
+.intro_big{
+  font-size: 40px;
+}
+
+.intro b{
+  font-weight: 800!important;
+}
+
+.link-after2  {
+  background-image: linear-gradient(120deg, $primary, 70%, $primary 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.15em;
+  background-position: 0 102%;
+  transition: background-size 0.25s ease-in,
+}
+
+.link-after3  {
+  padding: 0px 10px;
+  padding-top: 5px;
+  background-image: linear-gradient(120deg, #80bdff, 10%, #80bdff 10%);
+  background-repeat: no-repeat;
+  background-size: 100% 88%;
+  background-position: 0 102%;
+  color: black;
+
+}
+
+
+.link-after {
+  content: "";
+  display: block;
+  height: 0.15em;
+  background: $primary;
+}
+
+
+
+
+// Experiences
+
+.date {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.timeline-item h3{
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.timeline-item h5{
+  margin-bottom: 20px;
+  font-weight: 400;
+}
