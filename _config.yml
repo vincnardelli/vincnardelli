@@ -2,7 +2,7 @@
 title               : Vincenzo Nardelli
 description         : >-
                       Personal Website of Vincenzo Nardelli, Research Fellow in Statistics at Università Cattolica del Sacro Cuore in Rome.
-baseurl             : ""
+baseurl             : "/"
 
 ### Plugins ###
 plugins:
